@@ -20,6 +20,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Better/Info.plist; sourceTree = "<group>"; };
 		17D855BEA2A8E9EBE845F1FA /* Pods-Better.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better.debug.xcconfig"; path = "Target Support Files/Pods-Better/Pods-Better.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Better/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A17CBE3426DE0A7400E9DFF5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		C8C7CD472651C7DC4B231CB4 /* Pods-Better.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better.release.xcconfig"; path = "Target Support Files/Pods-Better/Pods-Better.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAA6DE272607FC1C0044CA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Better/AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +42,7 @@
 		13B07FAE1A68108700A75B9A /* Better */ = {
 			isa = PBXGroup;
 			children = (
+				A17CBE3326DE0A6500E9DFF5 /* Font */,
 				FAA6DE272607FC1C0044CA6D /* AppDelegate.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -56,7 +58,6 @@
 				17D855BEA2A8E9EBE845F1FA /* Pods-Better.debug.xcconfig */,
 				C8C7CD472651C7DC4B231CB4 /* Pods-Better.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +97,14 @@
 				13B07F961A680F5B00A75B9A /* Better.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A17CBE3326DE0A6500E9DFF5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A17CBE3426DE0A7400E9DFF5 /* MaterialIcons.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
