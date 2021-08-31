@@ -111,6 +111,25 @@ module.exports = {
 > Reanimated plugin has to be listed last.  
 > v2.3.x not support react-native v0.65.x
 
+android/app/build.gradle
+```gradle
+project.ext.react = [
+  enableHermes: true
+]
+```
+
+MainApplication.kt
+```kotlin
+override fun getJSIModulePackage(): JSIModulePackage? {
+    return ReanimatedJSIModulePackage()
+}
+```
+
+androdi/proguard-rules.pro
+```gradle
+-keep class com.facebook.react.turbomodule.** { *; }
+```
+
 <br/>
 
 ## Custom Font
