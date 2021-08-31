@@ -3,13 +3,18 @@ import { Box, Center, Text } from 'native-base'
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import { Label } from '../../components/Label'
 
 const List = ({ navigation }: { navigation: any }) => {
   return (
     <Box safeArea>
       <TouchableOpacity onPress={() => navigation.navigate('Detail')}>
         <Center>
-          <Text>ListScreen</Text>
+          {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((w) => (
+            <Label fontSize={20} fontWeight={w} key={w}>
+              ListScreen
+            </Label>
+          ))}
         </Center>
       </TouchableOpacity>
     </Box>
