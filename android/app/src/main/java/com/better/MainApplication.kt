@@ -3,7 +3,9 @@ package com.better
 import android.app.Application
 import android.content.Context
 import com.facebook.react.*
+import com.facebook.react.bridge.JSIModulePackage
 import com.facebook.soloader.SoLoader
+import com.swmansion.reanimated.ReanimatedJSIModulePackage
 import java.lang.reflect.InvocationTargetException
 
 class MainApplication : Application(), ReactApplication {
@@ -22,6 +24,10 @@ class MainApplication : Application(), ReactApplication {
 
         override fun getJSMainModuleName(): String {
             return "index"
+        }
+
+        override fun getJSIModulePackage(): JSIModulePackage? {
+            return ReanimatedJSIModulePackage()
         }
     }
 
