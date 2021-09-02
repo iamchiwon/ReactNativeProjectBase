@@ -30,6 +30,19 @@ yarn add native-base react-native-svg styled-components styled-system react-nati
 npx pod-install ios
 ```
 
+App.tsx
+```typescript
+import { NativeBaseProvider } from 'native-base'
+
+const App = () => {
+  return (
+    <NativeBaseProvider>
+      ...
+    </NativeBaseProvider>
+  )
+}
+```
+
 <br/>
 
 ## Navigation
@@ -40,6 +53,7 @@ npx pod-install ios
 yarn add @react-navigation/native
 yarn add react-native-screens react-native-safe-area-context
 yarn add @react-navigation/native-stack
+yarn add react-native-gesture-handler
 npx pod-install ios
 ```
 
@@ -169,10 +183,6 @@ export const Label = (props: Props) => {
     'GothicA1-Black',
   ]
 
-  const passedStyles = Array.isArray(style)
-    ? Object.assign({}, ...style)
-    : style
-
   const family =
     typeof otherProps.fontWeight === 'number'
       ? fontFamilies[otherProps.fontWeight / 100 - 1]
@@ -198,5 +208,28 @@ export const Label = (props: Props) => {
       {children}
     </Text>
   )
+}
+```
+
+<br/>
+
+## Reanimated
+
+- https://github.com/DylanVann/react-native-fast-image
+
+```bash
+yarn add react-native-fast-image
+npx pod-install ios
+```
+
+androdi/proguard-rules.pro
+```gradle
+-keep public class com.dylanvann.fastimage.* {*;}
+-keep public class com.dylanvann.fastimage.** {*;}
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
 }
 ```
