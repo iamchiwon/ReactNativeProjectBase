@@ -23,6 +23,8 @@ npx react-native init {AppName} --template react-native-better-template
 
 ## Components
 
+<details>
+<summary>Native Base</summary>
 - https://nativebase.io/
 
 ```bash
@@ -44,8 +46,10 @@ const App = () => {
 ```
 
 <br/>
+</details>
 
-## Navigation
+<details>
+<summary>React Navigation</summary>
 
 - https://reactnavigation.org/
 
@@ -88,8 +92,10 @@ export default function App() {
 ```
 
 <br/>
+</details>
 
-## Vector Icons
+<details>
+  <summary>Vector Icons</summary>
 
 - https://github.com/oblador/react-native-vector-icons
 
@@ -100,8 +106,10 @@ npx react-native link react-native-vector-icons
 ```
 
 <br/>
+</details>
 
-## Reanimated
+<details>
+  <summary>Reanimated</summary>
 
 - https://docs.swmansion.com/react-native-reanimated/
 
@@ -145,8 +153,10 @@ androdi/proguard-rules.pro
 ```
 
 <br/>
+</details>
 
-## Custom Font
+<details>
+<summary>Custom Font (Android)</summary>
 
 - [Gothic A1](https://fonts.google.com/specimen/Gothic+A1)
 - Use default font on android.
@@ -212,8 +222,10 @@ export const Label = (props: Props) => {
 ```
 
 <br/>
+</details>
 
-## Reanimated
+<details>
+<summary>Reanimated</summary>
 
 - https://github.com/DylanVann/react-native-fast-image
 
@@ -233,3 +245,6 @@ androdi/proguard-rules.pro
   public *;
 }
 ```
+
+<br/>
+</details>
