@@ -29,15 +29,15 @@ export const Label = (props: Props) => {
   // (단, 파일의 수정 및 폰트 자체를 판매하는 행위는 불가합니다.)
 
   const fontFamilies = [
-    'SCDream1',
-    'SCDream2',
-    'SCDream3',
-    'SCDream4',
-    'SCDream5',
-    'SCDream6',
-    'SCDream7',
-    'SCDream8',
-    'SCDream9',
+    'SCDream1', // Thin
+    'SCDream2', // Extra Light
+    'SCDream3', // Light
+    'SCDream4', // Regular
+    'SCDream5', // Medium
+    'SCDream6', // Bold
+    'SCDream7', // Extra Bold
+    'SCDream8', // Black
+    'SCDream9', // Extra Black
   ]
 
   const family =

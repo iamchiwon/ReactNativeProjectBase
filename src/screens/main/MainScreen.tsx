@@ -1,9 +1,10 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Box, Center, Text } from 'native-base'
+import { Box, Center } from 'native-base'
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+
 import { Label } from '../../components/Label'
+import { MaterialIcons } from '../../components/MaterialIcons'
 
 const List = ({ navigation }: { navigation: any }) => {
   return (
