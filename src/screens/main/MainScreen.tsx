@@ -12,7 +12,7 @@ const List = ({ navigation }: { navigation: any }) => {
         <Center>
           {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((w) => (
             <Label fontSize={20} fontWeight={w} key={w}>
-              ListScreen
+              헬로월드 Hello World
             </Label>
           ))}
         </Center>

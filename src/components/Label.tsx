@@ -4,54 +4,62 @@ import { Platform } from 'react-native'
 
 interface Props extends ITextProps {}
 export const Label = (props: Props) => {
-  const { children, style, color, ...otherProps } = props
+  let { children, color, fontWeight, fontSize, style, ...otherProps } = props
   const isIOS = Platform.OS === 'ios'
 
   if (isIOS) {
     return (
-      <Text {...otherProps} style={style} color={color || 'black'}>
+      <Text
+        color={color || 'black'}
+        fontWeight={fontWeight}
+        fontSize={fontSize}
+        style={style}
+        {...otherProps}
+      >
         {children}
       </Text>
     )
   }
 
+  // 에스코어 드림 (S-Core Dream)
+  // https://www.s-core.co.kr/company/font/
+  //
+  // 에스코어의 글꼴의 지적 재산권은 (주)에스코어에 있습니다.
+  // 에스코어 홈페이지를 통해 배포되는 에스코어 글꼴은 개인 및 기업 사용자를 포함한 모든 사용자에게 무료로 제공되며 재배포가 가능합니다.
+  // (단, 파일의 수정 및 폰트 자체를 판매하는 행위는 불가합니다.)
+
   const fontFamilies = [
-    'GothicA1-Thin',
-    'GothicA1-ExtraLight',
-    'GothicA1-Light',
-    'GothicA1-Regular',
-    'GothicA1-Medium',
-    'GothicA1-SemiBold',
-    'GothicA1-Bold',
-    'GothicA1-ExtraBold',
-    'GothicA1-Black',
+    'SCDream1',
+    'SCDream2',
+    'SCDream3',
+    'SCDream4',
+    'SCDream5',
+    'SCDream6',
+    'SCDream7',
+    'SCDream8',
+    'SCDream9',
   ]
 
-  const passedStyles = Array.isArray(style)
-    ? Object.assign({}, ...style)
-    : style
-
   const family =
-    typeof otherProps.fontWeight === 'number'
-      ? fontFamilies[otherProps.fontWeight / 100 - 1]
-      : fontFamilies[4] // GothicA1-Medium
+    typeof fontWeight === 'number'
+      ? fontFamilies[fontWeight / 100 - 1]
+      : fontFamilies[3]
 
-  const lineHeight =
-    typeof otherProps.fontSize === 'number'
-      ? otherProps.fontSize * 1.2
-      : undefined
+  fontWeight = typeof fontWeight === 'number' ? undefined : fontWeight
+  fontSize = typeof fontSize === 'number' ? fontSize * 0.8 : fontSize
 
   return (
     <Text
-      {...otherProps}
       color={color || 'black'}
+      fontWeight={fontWeight}
+      fontSize={fontSize}
       style={[
         {
           fontFamily: family,
-          lineHeight: lineHeight,
         },
         style,
       ]}
+      {...otherProps}
     >
       {children}
     </Text>
