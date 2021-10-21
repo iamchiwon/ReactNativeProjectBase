@@ -22,6 +22,10 @@ npx react-native init {AppName} --template react-native-better-template
 - Customized
   - MainApplication.kt -> MainApplication.java  
     : react-native link not works with kotlin file.
+  - [android] Use custom font as default  
+    : android default fonts are sucks.
+  - Pre-built components included  
+    : every project would use them.
 
 <br/>
 
@@ -225,7 +229,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     ...
 
-    RNSplashScreen.showSplash("LaunchScreen", inRootView: rootView)
+    RNSplashScreen.show()
     return true
   }
 ```
