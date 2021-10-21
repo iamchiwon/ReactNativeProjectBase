@@ -1,7 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { Box, Center } from 'native-base'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TouchableOpacity } from 'react-native'
+import SplashScreen from 'react-native-splash-screen'
 
 import { Label } from '../../components/Label'
 import { MaterialIcons } from '../../components/MaterialIcons'
@@ -35,6 +36,11 @@ const Detail = () => {
 const Stack = createNativeStackNavigator()
 
 const MainScreen = () => {
+  useEffect(() => {
+    SplashScreen.hide()
+    return () => {}
+  }, [])
+
   return (
     <Stack.Navigator
       screenOptions={{

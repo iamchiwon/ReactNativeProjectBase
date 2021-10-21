@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate {
     window?.rootViewController = rootViewController
     window?.makeKeyAndVisible()
 
+    RNSplashScreen.show()
     return true
   }
 

@@ -18,6 +18,8 @@ target 'Better' do
   # you should disable the next line.
   use_flipper!({ 'Flipper' => '0.87.0' })
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
   post_install do |installer|
     react_native_post_install(installer)
   end

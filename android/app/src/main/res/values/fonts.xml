@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PretendardThin">Pretendard-Thin</string>
+    <string name="PretendardExtraLight">Pretendard-ExtraLight</string>
+    <string name="PretendardLight">Pretendard-Light</string>
+    <string name="PretendardRegular">Pretendard-Regular</string>
+    <string name="PretendardMedium">Pretendard-Medium</string>
+    <string name="PretendardSemiBold">Pretendard-SemiBold</string>
+    <string name="PretendardBold">Pretendard-Bold</string>
+    <string name="PretendardExtraBold">Pretendard-ExtraBold</string>
+    <string name="PretendardBlack">Pretendard-Black</string>
+</resources>
