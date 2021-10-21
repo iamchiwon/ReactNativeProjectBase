@@ -36,7 +36,11 @@ const Stack = createNativeStackNavigator()
 
 const MainScreen = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        animation: 'slide_from_right',
+      }}
+    >
       <Stack.Screen name='List' component={List} />
       <Stack.Screen name='Detail' component={Detail} />
     </Stack.Navigator>
