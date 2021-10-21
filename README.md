@@ -19,6 +19,10 @@ react-native project with typescript, swift and kotlin.
 npx react-native init {AppName} --template react-native-better-template
 ```
 
+- Customized
+  - MainApplication.kt -> MainApplication.java  
+    : react-native link not works with kotlin file.
+
 <br/>
 
 ## Components
@@ -158,7 +162,7 @@ androdi/proguard-rules.pro
 <details>
 <summary>Custom Font (Android)</summary>
 
-- [SCDream](https://www.s-core.co.kr/company/font/)
+- [Pretendard](https://cactus.tistory.com/306)
 - Use as default font for android.
   (There are no variable weights for the default Korean font)
 
@@ -166,7 +170,7 @@ androdi/proguard-rules.pro
 </details>
 
 <details>
-<summary>Reanimated</summary>
+<summary>Fast Image</summary>
 
 - https://github.com/DylanVann/react-native-fast-image
 
@@ -186,6 +190,49 @@ androdi/proguard-rules.pro
   public *;
 }
 ```
+
+<br/>
+</details>
+
+<details>
+<summary>Splash Screen</summary>
+
+- [SplashScreen](https://github.com/crazycodeboy/react-native-splash-screen)
+
+```bash
+yarn add react-native-splash-screen
+npx pod-install ios
+```
+
+MainActivity.kt
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+    SplashScreen.show(this);
+    super.onCreate(null)
+}
+```
+
+Better-Bridging-Header.h
+```objc
+...
+#import "RNSplashScreen.h"
+```
+
+AppDelegate.swift
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    initializeFlipper(with: application)
+
+    ...
+
+    RNSplashScreen.showSplash("LaunchScreen", inRootView: rootView)
+    return true
+  }
+```
+
+
+<br/>
+</details>
 
 <br/>
 </details>
