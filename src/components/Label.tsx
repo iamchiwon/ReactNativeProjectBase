@@ -21,23 +21,19 @@ export const Label = (props: Props) => {
     )
   }
 
-  // 에스코어 드림 (S-Core Dream)
-  // https://www.s-core.co.kr/company/font/
-  //
-  // 에스코어의 글꼴의 지적 재산권은 (주)에스코어에 있습니다.
-  // 에스코어 홈페이지를 통해 배포되는 에스코어 글꼴은 개인 및 기업 사용자를 포함한 모든 사용자에게 무료로 제공되며 재배포가 가능합니다.
-  // (단, 파일의 수정 및 폰트 자체를 판매하는 행위는 불가합니다.)
+  // Pretendard
+  // https://cactus.tistory.com/306
 
   const fontFamilies = [
-    'SCDream1', // Thin
-    'SCDream2', // Extra Light
-    'SCDream3', // Light
-    'SCDream4', // Regular
-    'SCDream5', // Medium
-    'SCDream6', // Bold
-    'SCDream7', // Extra Bold
-    'SCDream8', // Black
-    'SCDream9', // Extra Black
+    'Pretendard-Thin',
+    'Pretendard-ExtraLight',
+    'Pretendard-Light',
+    'Pretendard-Regular',
+    'Pretendard-Medium',
+    'Pretendard-SemiBold',
+    'Pretendard-Bold',
+    'Pretendard-ExtraBold',
+    'Pretendard-Black',
   ]
 
   const family =
